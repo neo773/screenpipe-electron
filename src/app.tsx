@@ -62,10 +62,12 @@ const App = () => {
         .filter(Boolean);
       console.log(`starting cli with flags: ${flags}`);
       const result = await window.electron.startCLI(flags);
+      console.log('result:', JSON.stringify(result, null, 2));
       if (!result.success) {
         setError(result.message);
       }
     } catch (err: any) {
+      console.error(err);
       setError(err.message || "Failed to start CLI");
     }
   };
