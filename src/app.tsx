@@ -14,6 +14,7 @@ import {
   CircleStop,
   ArrowDownToLine,
   Book,
+  LoaderCircle,
 } from "lucide-react";
 import { Alert, AlertDescription } from "@/components/ui/alert";
 import { ModeToggle } from "./components/mode-toggle";
@@ -128,7 +129,7 @@ const App = () => {
               {isInstalling ? (
                 <>
                   <div className="animate-spin mr-2">
-                    <Activity className="h-4 w-4" />
+                    <LoaderCircle className="h-4 w-4" />
                   </div>
                   Installing...
                 </>
