@@ -80,7 +80,7 @@ export function SettingsDialog({ onSettingsChange, currentSettings = {} }: Setti
                   onValueChange={([value]) => handleChange('fps', value)}
                 />
                 <p className='text-sm text-muted-foreground'>
-                  Current: {settings.fps} FPS (~{Math.round(settings.fps * 30)} GB/month)
+                  Current: {settings.fps} FPS (~{Math.round(settings.fps * 30)})
                 </p>
               </div>
 
